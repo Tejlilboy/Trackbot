@@ -1,7 +1,7 @@
 # Copyrighted R2-D2 sample data: personal use only, never commit
-Trackbot/sound_r2_*.h
+firmware/Trackbot/sound_r2_*.h
 # Local WiFi credentials
-Trackbot/secrets.h
+firmware/Trackbot/secrets.h
 # Build / editor junk
 build/
 *.bin

@@ -2,7 +2,12 @@
 
 > ⚠️ **FIRST DRAFT, WORK IN PROGRESS.** This is the first draft of the firmware and it has **never run on real hardware**. Expect bugs, and expect **a LOT of changes**: pins, tuning values, behaviors and even the file layout will move around as Pip gets built and tested.
 
-Arduino sketch in `Trackbot/`. Open `Trackbot/Trackbot.ino` in Arduino IDE.
+## Repo layout
+| Folder | Contents |
+|---|---|
+| `firmware/Trackbot/` | Arduino sketch (open `Trackbot.ino` in Arduino IDE) |
+| `hardware/` | STLs, CAD and PCB/Gerber files (see `hardware/README.md`) |
+| `docs/` | Photos, wiring diagrams, notes |
 
 ## Board settings
 - Board: **XIAO_ESP32S3** (esp32 by Espressif, core 3.x)
@@ -14,7 +19,7 @@ Adafruit SSD1306, Adafruit GFX, Adafruit NeoPixel, ESP32Servo,
 SparkFun VL53L5CX Arduino Library, ESP Async WebServer, Async TCP
 
 ## First steps
-1. Copy `Trackbot/secrets.example.h` to `Trackbot/secrets.h` and set your WiFi name/password (`secrets.h` is git-ignored). Set `USE_*` switches to 0 for parts not wired yet.
+1. Copy `firmware/Trackbot/secrets.example.h` to `firmware/Trackbot/secrets.h` and set your WiFi name/password (`secrets.h` is git-ignored). Set `USE_*` switches to 0 for parts not wired yet.
 2. Upload, open Serial Monitor at 115200. Type `p` (pet), `s` (shake), `h` (hand), `w` (wander), `c` (sneeze), `o` (zoomies), `1` (1-min focus timer), `m` (print moods).
 3. Phone: open `http://pip.local` (or the IP printed on Serial). DEBUG tab fires events too.
 4. Tune values marked TUNE in `config.h` once hardware is assembled.
