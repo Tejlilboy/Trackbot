@@ -22,3 +22,6 @@ SparkFun VL53L5CX Arduino Library, ESP Async WebServer, Async TCP
 ## Status
 Compiles against stubbed headers and runs in a desktop simulation; **not yet run on real hardware**.
 More features and fixes are coming; see the TODO notes in the code.
+
+## License
+[MIT](LICENSE): free to use, copy, modify and share, for anything. R2-D2 sound samples are not included and not covered.
