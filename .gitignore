@@ -1,0 +1,12 @@
+# Copyrighted R2-D2 sample data: personal use only, never commit
+Trackbot/sound_r2_*.h
+# Local WiFi credentials
+Trackbot/secrets.h
+# Build / editor junk
+build/
+*.bin
+*.elf
+.vscode/
+.DS_Store
+# Private project notes (local only)
+CLAUDE.md
